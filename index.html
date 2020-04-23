@@ -1,14 +1,27 @@
+<!--crear un programa que: 
+1. Capture dos variables
+2. Tenga cuatro botones (suma, resta, multiplicacion, division)
+3. Que devuelva el resultado de la operacion segun el boton que se presione-->
+
+<!--Se debe aplicar lo visto en la resolución de problemas-->
+
+<!-- se crea archivo html-->
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Se le asigna un titulo a la pagina web-->
     <title>Resolucion de Problemas</title>
+<!--Se hace referencia al archivo css el cual nos ayudara a aplicarle estilo a la pagina web-->
     <link type="text/css" href="diseño.css" rel="stylesheet">
 </head>
 <body>
+<!--se interta un titulo-->
     <h1>Resolución de Problemas</h1>
+<!--Se inserta un formulario-->
  <form>
+<!--Dentro de el formulario se insertan dos inputs de tipo number los cuales nos ayudarán a capturar las variables con las cuales trabajaremos-->
 <br>
      <label for="a">Ingrese el Primer Número a Operar: </label>
      <input type="number" id="a" name="a">
@@ -18,17 +31,22 @@
      <input type="number" id="b" name="b">
 <br>
 <p>Que Operación desea realizar?</p>
+<!--Se insertan los cuatro botones que nos permitirán realizar las cuatro operacines diferentes-->
+<!--A cada botón se le agrega el atributo "onclick" con el cual se llamará a la funcion correspondiente-->
      <input type="button" id="suma" name="suma" value="SUMA" onclick="add()"></button>
      <input type="button" id="resta" name="resta" value="RESTA" onclick="rest()"></button>
      <input type="button" id="multiplicacion" name="multiplicacion" value="MULTIPLICACION" onclick="mul()"></button>
      <input type="button" id="division" name="division" value="DIVISION" onclick="div()"></button>
 <br><br>
+<!--Se inserta otro input de tipo number en el cual se mostrará el resultado de la operacion que se seleccione-->
      <label for="c">El Resultado de la Operación es: </label>
      <input type="number" id="c" name="c">
 <br><br>
+<!--Se inserta un quinto boton cuya funcion es limpiar las casillas para llevar a cabo otra operación-->
      <input type="button" id="limpiar" name="limpiar" value="LIMPIAR" onclick="clean()">
 <br><br>
- </form>   
+ </form>
+ <!--Se adjunto el archivo de Java Script el cual nos ayudará a llevar a cabo las operaciones-->   
  <script src="funciones.js"></script>
 </body>
 </html>
