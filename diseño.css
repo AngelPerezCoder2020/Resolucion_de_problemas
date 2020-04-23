@@ -7,15 +7,14 @@ h1
     text-align: center;
     font-family: Cambria;
 }
+
 form
 {
-  margin:0 auto;   
+  margin:0 auto;
+  text-align: center;
+  background-color:#fff;   
 }
-form
-{
-    text-align: center;
-    background-color:#fff;
-}
+
 body
 {
    background-color:aqua;
