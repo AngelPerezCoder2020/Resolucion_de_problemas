@@ -3,6 +3,7 @@ function add()
 {
  var a = document.getElementById("a").value;
  var b = document.getElementById("b").value;
+ //Se parsearon las variables para convertirlas a numeros enteros
  a = parseInt(a);
  b = parseInt(b);
  var c;
