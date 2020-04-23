@@ -42,3 +42,13 @@ function div()
  c = a / b;
 document.getElementById("c").value = c;
 }
+
+if(document.getElementById("a").value=="")
+{
+    document.getElementById("a").value = 0;
+}
+
+if(document.getElementById("b").value=="")
+{
+    document.getElementById("b").value = 0;
+}
