@@ -42,6 +42,12 @@ function div()
  c = a / b;
 document.getElementById("c").value = c;
 }
+function clean()
+{
+ document.getElementById("a").value= "";
+ document.getElementById("b").value= "";
+ document.getElementById("c").value= "";
+}
 
 if(document.getElementById("a").value=="")
 {
